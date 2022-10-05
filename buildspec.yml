@@ -1,5 +1,4 @@
 version: 0.2
-#
 
 phases:
   install:
@@ -8,9 +7,9 @@ phases:
 
   pre_build:
     commands:
-      - 
-      - 
+      - chmod +x build_image.sh push-image.sh
+      - ./build_image.sh
 
   build:
     commands:
-      - 
+      - ./push-image.sh
